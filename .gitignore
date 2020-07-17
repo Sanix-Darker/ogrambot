@@ -1,0 +1,16 @@
+logs.log
+.history
+*__pycache__
+*.pyc
+.vcode
+app/api/__pycache__/
+tests/__pycache__/
+tests/.pytest_cache/
+config.txt
+.idea
+*.json
+*.txt
+app/server/static/*
+json_maps/*
+chunks/*
+venv
