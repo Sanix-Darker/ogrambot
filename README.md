@@ -30,9 +30,19 @@ pip3 install -r requirements.txt
 ```
 ## ScreenShots
 
-<img src="./images/1.png" />
-<img src="./images/2.png" />
-<img src="./images/3.png" />
+<table>
+  <tr>
+    <td>
+      <img src="./images/1.png" />
+    </td>
+    <td>
+      <img src="./images/2.png" />
+    </td>
+    <td>
+      <img src="./images/3.png" />
+    </td>
+  </tr>
+</table>
 
 ## Author
 
