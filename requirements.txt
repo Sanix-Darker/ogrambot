@@ -1,0 +1,4 @@
+# Telegram-bot
+setuptools
+configparser
+python-telegram-bot==12.3.0
