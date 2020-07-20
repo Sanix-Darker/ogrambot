@@ -44,10 +44,10 @@ def get_name(from_user):
     name = ""
     if from_user.first_name == None or from_user.last_name == None :
         if from_user.first_name != None:
-            name += str(from_user.first_name)
+            name += str(from_user.first_name).replace("'", "")
         if from_user.last_name != None:
-            name += str(from_user.last_name)
+            name += str(from_user.last_name).replace("'", "")
     else:
-        name = str(from_user.first_name) + " " + str(from_user.last_name)
+        name = (str(from_user.first_name) + " " + str(from_user.last_name)).replace("'", "")
 
     return name
