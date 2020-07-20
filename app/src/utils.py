@@ -42,12 +42,15 @@ def get_lang_string_by_code(lang_code, code):
 # Get name from user object
 def get_name(from_user):
     name = ""
-    if from_user.first_name == None or from_user.last_name == None :
-        if from_user.first_name != None:
-            name += str(from_user.first_name).replace("'", "")
-        if from_user.last_name != None:
-            name += str(from_user.last_name).replace("'", "")
-    else:
-        name = (str(from_user.first_name) + " " + str(from_user.last_name)).replace("'", "")
+    try: 
+        if from_user.first_name == None or from_user.last_name == None :
+            if from_user.first_name != None:
+                name += str(from_user.first_name).replace("'", "")
+            if from_user.last_name != None:
+                name += str(from_user.last_name).replace("'", "")
+        else:
+            name = (str(from_user.first_name) + " " + str(from_user.last_name)).replace("'", "")
+    except Exception as es:
+        name = " ..."
 
     return name

@@ -1,4 +1,4 @@
 {
-     "WELCOME_MESSAGE": "Bienvenue sur Ogram-Bot! \n\nN'oubliez pas de desactiver les notifications ! \n-\nVotre Chat_id est:",
-     "HELP_MESSAGE": "\n /start - Pour obtenir votre chat_id. \n /help - Comment cela fonctionne. \n\nSi vous avez toujours un problème, veuillez contacter le développeur à @sanixdarker."
+    "WELCOME_MESSAGE":"Welcome to Ogram Bot! \n\nMute tes notifications ! \n-\nChat_id :",
+    "HELP_MESSAGE" : "\n /start - Pour obtenir votre chat_id. \n /help - Comment cela fonctionne. \n\nSi vous avez toujours un probleme, veuillez contacter @sanixdarker."
 }

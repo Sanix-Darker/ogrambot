@@ -21,6 +21,7 @@ def start_callback(bot, update):
 
     # profil, options, help, add, revoke, news, complex search
     if reject_bots(bot, update):
+
         bot.send_message(chat_id=update.message.chat_id,
                          text=get_lang_string_by_code(lang_code, "WELCOME_MESSAGE") 
                          + " " + str(update.message.chat_id))
