@@ -2,6 +2,7 @@
 
 from app.src.commands import *
 from app.settings import *
+from app.src.utils import presentation
 
 # Starting with the presentation
 presentation()
