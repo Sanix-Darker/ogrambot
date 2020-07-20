@@ -3,6 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
 
+from app.sys_logger import logger
 from app.src.utils import get_lang_string_by_code, get_name, printLog, reject_bots
 
 
@@ -37,7 +38,7 @@ def help_callback(bot, update):
 
 def error(bot, update, error):
     """Log Errors caused by Updates."""
-    logger.warning('Update "%s" caused error "%s"', update, error)
+    logger.error('>> Update "%s" caused error "%s"', update, error)
 
 
 # /start Handler
