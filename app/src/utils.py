@@ -38,3 +38,16 @@ def get_lang_string_by_code(lang_code, code):
     with open('lang/' + lang_code + '.json', 'r+', encoding='utf-8') as f:
         lang_string = json.load(f)
         return lang_string[code]
+
+# Get name from user object
+def get_name(from_user):
+    name = ""
+    if from_user.first_name == None or from_user.last_name == None :
+        if from_user.first_name != None:
+            name += str(from_user.first_name)
+        if from_user.last_name != None:
+            name += str(from_user.last_name)
+    else:
+        name = str(from_user.first_name) + " " + str(from_user.last_name)
+
+    return name

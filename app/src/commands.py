@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
 
-from app.src.utils import *
+from app.src.utils import *, get_lang_string_by_code, get_name, printLog, reject_bots
 
 
 # ---------------------------------------------
@@ -11,12 +11,12 @@ from app.src.utils import *
 # ---------------------------------------------
 # define a command callback function : /start
 def start_callback(bot, update):
+
     lang_code = update.message.from_user.language_code
 
     printLog("/start ", update.message.from_user)
     bot.send_message(chat_id=update.message.chat_id,
-                     text="Hello " + str(update.message.from_user.first_name) 
-                     + " " + str(update.message.from_user.last_name))
+                     text="Hello " + get_name(update.message.from_user))
 
     # profil, options, help, add, revoke, news, complex search
     if reject_bots(bot, update):
