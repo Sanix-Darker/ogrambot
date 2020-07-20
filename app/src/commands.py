@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove
 
-from app.src.utils import *, get_lang_string_by_code, get_name, printLog, reject_bots
+from app.src.utils import get_lang_string_by_code, get_name, printLog, reject_bots
 
 
 # ---------------------------------------------
